@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Scooping - Pet Waste Removal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="logo">
+      <img src="BeeScoopingLogo2.png" alt="Bee Scooping Logo">
+    </div>
+    <ul>
+      <li data-section="about">About</li>
+      <li data-section="services">What We Do</li>
+      <li data-section="pricing">Pricing</li>
+      <li data-section="quotes">Commercial Quotes</li>
+      <li data-section="contact">Contact Us</li>
+    </ul>
+  </nav>
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <button id="menu-toggle">☰</button>
+    <h1>Bee Scooping</h1>
+    <button class="cta-btn main-btn" data-section="contact">🐝 Schedule Service</button>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- About -->
+    <section id="about" class="active">
+      <h2>About Us</h2>
+      <p>At Bee Scooping, we take the sting out of pet waste cleanup. Our eco-friendly team ensures your yard stays fresh, clean, and safe for your family and pets.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>What We Do</h2>
+      <p>We provide reliable and affordable pet waste removal services for residential and commercial properties. Our team will buzz by, scoop the poop, and leave your lawn spotless.</p>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-service="One-Time Scooping" data-price="60">
+          <h3>🐝 One-Time Scooping</h3>
+          <p class="price">$60</p>
+        </div>
+        <div class="pricing-card" data-service="Bi-Weekly Scoopings" data-price="30 per Month">
+          <h3>🐝 Bi-Weekly Scoopings</h3>
+          <p class="price">$30 per Month</p>
+        </div>
+        <div class="pricing-card" data-service="Weekly Scoopings" data-price="60 per Month">
+          <h3>🐝 Weekly Scoopings</h3>
+          <p class="price">$60 per Month</p>
+        </div>
+        <div class="pricing-card" data-service="Twice Weekly Scoopings" data-price="90 per Month">
+          <h3>🐝 Twice Weekly Scoopings</h3>
+          <p class="price">$90 per Month</p>
+        </div>
+        <div class="pricing-card" data-service="Three Weekly Scoopings" data-price="120 per Month">
+          <h3>🐝 Three Weekly Scoopings</h3>
+          <p class="price">$120 per Month</p>
+        </div>
+      </div>
+      <p><strong>All prices are for up to 4 dogs. If you have more than 4 dogs, please contact us for a custom quote. Commercial properties, please contact us for a quote.</strong></p>
+    </section>
+
+    <!-- Commercial Quotes -->
+    <section id="quotes">
+      <h2>Commercial Quotes</h2>
+      <p>We offer customized scooping solutions for apartments, HOAs, parks, and businesses. Contact us to receive a tailored commercial quote for your property.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Use the form below or reach us directly:</p>
+      <p>Email: info@beescooping.com | Phone: (555) 123-4567</p>
+      
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Deodorizer add-on (hidden unless pricing card clicked) -->
+        <div id="deodorizer-section" class="checkbox-group">
+          <input type="checkbox" id="deodorizer" name="deodorizer" value="yes">
+          <label for="deodorizer">Add Pet & Lawn Safe Deodorizer (+$15 per service)</label>
+        </div>
+
+        <button type="submit" class="main-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
